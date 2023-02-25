@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <title> MemRecall </title>
+  <style> 
+    .cell {
+      width: 60px;
+      height: 60px;
+      border: 1px solid black;
+      border-radius: 5px;
+      text-align: center;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+ </head>
+  <body background= "USE.png" style = "background-size: cover">
+  <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+   <tr>
+     <td>  
+      
+       <font face = "american typewriter" color = "#ffffff" size = "6">
+         <button class = "invisibleButton" onClick="toHomePage()">
+            <img src= "brainstorm.png"width="30" height="30">
+       MemRecall 
+         </button>
+       </font>
+     </td>
+     <td>
+    
+      <button class = "invisibleButton" onClick="toGameHomePage()">
+         <font face = "american typewriter" color = "#ffffff" size = "5"> 
+           games
+         </font>
+      </button>
+       </td>
+       
+     
+     <td>
+      
+       <button class = "invisibleButton" onClick="toContactPage()">
+           <font face = "american typewriter" color = "#ffffff" size = "5">
+       contacts
+          </font>
+       </button>
+     </td>
+     <td>
+      
+       <button class = "invisibleButton" onClick="toResourcesPage()">
+          <font face = "american typewriter" color = "#ffffff" size = "5">
+      resources
+         </font>
+       </button>
+     </td>
+   </tr>
+ </table>
+    <div class="instructions" id="instructions">
+<h2>How to Play:<br> Slider Game</h2>
+<p> Move around the numbers to get the numbers in ascending order from left to right. If you do, you win!</p>
+  <button class="instructionButton" onclick="closeInstructions()">OK</button>
+</div>
+<center>
+  <font face = "american typewriter" color = "#800033" size = "6">
+   
+  <div id = "puzzle_container">
+    <div class = "puzzle_block">1</div>
+    <div class = "puzzle_block">2</div>
+    <div class = "puzzle_block">3</div>
+    <div class = "puzzle_block">4</div>
+    <div class = "puzzle_block">5</div>
+    <div class = "puzzle_block">6</div>
+    <div class = "puzzle_block">7</div>
+    <div class = "puzzle_block">8</div>
+  </div>
+    <center>
+  <div id = "difficulty_container">
+    <div class = "difficulty_button active">EASY</div>
+    <div class = "difficulty_button active">MEDIUM</div>
+    <div class = "difficulty_button active">HARD</div>  
+  </div>
+      </center>
+  </font>
+  </center>
+
+  <script src = "sliderGame.js"></script>
+
+</body>
+</html>

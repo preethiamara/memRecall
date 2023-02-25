@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <title>MemRecall</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <style>
+    a:link {color: #800033;}
+a:visited {color:#0000ff;}
+a:hover {color: white;}
+
+
+    
+  </style>
+</head>
+
+<body background= "Untitled.png" style = "background-size: cover">
+ <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+   <tr>
+     <td>  
+      
+       <font face = "american typewriter" color = "#ffffff" size = "6">
+         <button class = "invisibleButton" onClick="toHomePage()">
+            <img src= "brainstorm.png"width="30" height="30">
+       MemRecall 
+         </button>
+       </font>
+     </td>
+     <td>
+    
+      <button class = "invisibleButton" onClick="toGameHomePage()">
+         <font face = "american typewriter" color = "#ffffff" size = "5"> 
+           games
+         </font>
+      </button>
+       </td>
+       
+     
+     <td>
+      
+       <button class = "invisibleButton" onClick="toContactPage()">
+           <font face = "american typewriter" color = "#ffffff" size = "5">
+       contacts
+          </font>
+       </button>
+     </td>
+     <td>
+      
+       <button class = "invisibleButton" onClick="toResourcesPage()">
+          <font face = "american typewriter" color = "#ffffff" size = "5">
+      resources
+         </font>
+       </button>
+     </td>
+   </tr>
+ </table>
+  
+  <div id="resources">
+    <div class="box3" align = "center">
+    <center> 
+   <h1><u>Information and tools to help those with Alzheimers </u></h1>
+    </center>
+   <h2>Information</h2>
+   <p>Alzheimers is a disease that affects people's ability to retain short-term memory, and eventually, their ability to perform basic tasks. 
+     <br><br>
+     The causes of Alzheimers are not fully understood, but it is likely due to a combination of age related changes in the brain, such as blood vessel damage, cell death, changes in genes, and various lifestyle factors, such as blood ressure and obesity.
+   <br><br>
+   The most frequent symptoms are: difficulty in remembering, forgettng simple words, spatial issues, and impaired reasoning. Some other sympotoms are repeating questions, wandering, misplacing things, increased anxiety, and personality changes.
+     <br><br>
+     Note: Having one or more of these symptoms does not mean one certianly has Alzheimer's, but it does make it more likely. Please check with a doctor if you're unsure.
+     <br><br>
+     Check out these other resources for more detailed information: <br>
+   <a href= "https://www.alzheimers.gov/" target=_blank> Resource 1 </a> <br>
+     <a href= "https://www.nia.nih.gov/health/alzheimers-dementia-resources-for-professionals" target=_blank> Resource 2 </a> <br>
+    <a href= "https://www.ohsu.edu/brain-institute/alzheimers-disease-resources-patients-and-families" target=_blank> Resource 3</a> 
+    </div>
+    <br>
+     <br>
+     <br><br>
+   </p>
+  <div class="box4" align = "center">
+  <h2>Tools to assist in living with Alzheimers</h2>
+  <p>Though there is no cure for Alzheimer's, there is some treatment avaliable. Most medicines work in the early or middle stages, and research is being done to other treatments to delay or prevent the disease. Ask your doctor for more information.
+<br></br>
+  Help Hotline: <br><a href = "https://www.alz.org/help-support/resources/helpline" target=_blank> https://www.alz.org/help-support/resources/helpline </a> <br>
+  <br>Community Board for other people with Alzheimers: <br><a href= "https://www.alzconnected.org/" target=_blank> https://www.alzconnected.org/</a> <br> 
+  </p>
+  </div>
+  </div>
+</body>
+<br></br>
+<body>
+    <table border = "0" width = "100%" cellpadding = "0" cellspacing = "0" height = "900px" >
+       <tr height = "70px" valign = "top">
+         <td align = "center" valign = "bottom">
+           
+              <font face = "american typewriter" color = "#ffffff" size = "6">
+                YOUR DAILY ACTIVITY:
+              </font>
+        </td>
+       </tr>
+       <tr height = "100px" valign = "top">
+        <td valign = "top" >
+          <p id="affirmationDisplay"></p>
+          <script>
+            const affirmations = ["Talk to a loved one","Give an old friend a call", "Take a walk", "Listen to music", "Look at family photo albums", "Complete a puzzle", "Read your favorite book", "Play a card game", "Create a memory box", "Solve a rubik's cube", "Learn something new", "Watch a video on something you've never seen", "Read the newspaper","Be kind to someone", "Play a board game", "Paint a picture", "Plant flowers", "Feed the birds", "Sit on a bench or swing", "Visit a beach", "Keep a daily journal", "Write a poem"];
+            
+            function myFunction() {
+              let toffee = affirmations[Math.floor(Math.random( ) * affirmations.length+0)]
+              document.getElementById("affirmationDisplay").style.fontSize = "50px"; 
+              document.getElementById("affirmationDisplay").style.color = "white";
+              document.getElementById("affirmationDisplay").style.textAlign = "center";
+              document.getElementById("affirmationDisplay").style.fontWeight = "900";
+              document.getElementById("affirmationDisplay").style.fontFamily = "american typewriter"; 
+              document.getElementById("affirmationDisplay").innerHTML = toffee;
+            }
+            myFunction() 
+          </script>
+        </td>
+      </tr>
+      <tr valign = "top" align = "center">
+        <td align = "center" valign = "top">
+          <style>
+            .button {
+              border: none;
+              border-radius: 10px;
+              color: black;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 20px;
+              margin: 0px;
+              cursor: pointer;
+              font-family: american typewriter;
+              transition-duration: 0.2s
+            }
+            .button:hover {
+              background-color: #E29381;
+              color: white;
+            }
+          </style>
+          <button class="button" onClick="myFunction()">REFRESH FOR NEW ACTIVITY</button>
+        </td>
+  
+ <td>
+</html>

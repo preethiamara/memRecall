@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <title>MemRecall</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body background= "sea.gif" style = "background-size: cover">
+  <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+   <tr>
+     <td>  
+      
+       <font face = "american typewriter" color = "#ffffff" size = "6">
+         <button class = "invisibleButton" onClick="toHomePage()">
+            <img src= "brainstorm.png"width="30" height="30">
+       MemRecall 
+         </button>
+       </font>
+     </td>
+     <td>
+    
+      <button class = "invisibleButton" onClick="toGameHomePage()">
+         <font face = "american typewriter" color = "#ffffff" size = "5"> 
+           games
+         </font>
+      </button>
+       </td>
+       
+     
+     <td>
+      
+       <button class = "invisibleButton" onClick="toContactPage()">
+           <font face = "american typewriter" color = "#ffffff" size = "5">
+       contacts
+          </font>
+       </button>
+     </td>
+     <td>
+      
+       <button class = "invisibleButton" onClick="toResourcesPage()">
+          <font face = "american typewriter" color = "#ffffff" size = "5">
+      resources
+         </font>
+       </button>
+     </td>
+   </tr>
+ </table>
+ </table>
+
+<table align = "center" cellspacing = "100" cellwidth = "200">
+   <tr cellpadding = "30" cellspacing = "30" align = "center" backgound=transparent>
+
+<div class="instructions" id="instructions">
+<h2>How to Play:<br> Card Game</h2>
+<p>Turn over 2 cards at a time. If the two cards match, then you keep the cards, otherwise they will turn over. If you match all the cards, you win!</p>
+  <button class="instructionButton" onclick="closeInstructions()">OK</button>
+</div>
+     
+<center>
+    <div class = "wrapper">
+      <ul class = "cards">
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "1.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "2.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "3.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "4.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "5.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "6.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "7.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "8.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "9.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "10.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "11.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "12.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "13.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "14.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "15.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "16.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "17.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "18.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "1.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "2.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "3.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "4.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "5.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "6.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "7.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "8.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "9.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "10.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "11.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "12.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "13.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "14.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "15.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "16.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "17.png" >
+          </div>
+        </li>
+        <li class = "card">
+          <div class = "view front-view">
+            <img src = "q.avif" alt = "icon">
+          </div>
+          <div class = "view back-view">
+            <img src = "18.png" >
+          </div>
+        </li>
+      </ul>
+    </div></center>
+    <script src = "memorygame.js"></script>    
+  </tr>
+ </table>
+
+  <script>
+
+  </script>
+</body>
+
+</html>
